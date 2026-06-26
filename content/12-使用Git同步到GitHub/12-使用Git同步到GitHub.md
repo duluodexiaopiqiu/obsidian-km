@@ -1,8 +1,23 @@
 # 9.2 使用 Git 同步到 GitHub（数据备份与多端同步）
 
+## Windows
+
+> [Git for Windows 下载](https://git-scm.com/downloads)
+
+## 菜鸟教程git教程
+
+https://www.runoob.com/git/git-install-setup.html
+
+
+
+## Mac
+
+https://gitee.com/cunkai/HomebrewCN
+
 ## 为什么要用 Git 同步？
 
 Obsidian 的笔记是本地文件，这意味着：
+
 - 你电脑坏了 → 笔记全丢
 - 你换了电脑 → 笔记过不来
 - 想在公司接着写 → 不行
@@ -16,20 +31,35 @@ Obsidian 的笔记是本地文件，这意味着：
 ## 前置准备
 
 ### 需要安装的软件
+
 1. **Git**：https://git-scm.com/downloads
 2. **GitHub 账号**：https://github.com 免费注册
 3. **Obsidian Git 插件**（可选，用于在 Obsidian 中直接操作）
 
 ### 检查 Git 是否安装
+
 打开终端（CMD / PowerShell / 终端），输入：
+
 ```bash
 git --version
 ```
+
 如果显示版本号就说明已安装。
 
 ## 操作步骤
 
+## 前置：
+
+```Plain Text
+# 设置用户名
+git config --global user.name "duluodexiaopiqiu"
+
+# 设置邮箱（提交记录显示的邮箱，GitHub/Gitee 要用注册邮箱）
+git config --global user.email "qq邮箱"
+```
+
 ### 第一步：在 GitHub 上创建仓库
+
 1. 登录 GitHub，点击右上角"+" → "New repository"
 2. 仓库名称：`obsidian-vault`（或你喜欢的名字）
 3. 选择 **Private**（私人仓库，别人看不到）
@@ -37,6 +67,7 @@ git --version
 5. 点击"Create repository"
 
 ### 第二步：初始化本地仓库
+
 打开终端，进入你的 Obsidian Vault 目录：
 
 ```bash
@@ -45,6 +76,7 @@ git init
 ```
 
 ### 第三步：创建 .gitignore 文件
+
 在 Vault 根目录创建 `.gitignore` 文件，写入：
 
 ```
@@ -86,6 +118,7 @@ git clone https://github.com/你的用户名/obsidian-vault.git
 ## 日常使用流程
 
 ### 方式一：手动操作（推荐新手）
+
 每次写完笔记后：
 
 ```bash
@@ -101,6 +134,7 @@ git pull
 ```
 
 ### 方式二：Obsidian Git 插件（一键同步）
+
 1. 安装社区插件 **Obsidian Git**
 2. 设置自动提交间隔（如每30分钟）
 3. 通过快捷键或命令面板一键"提交并推送"
@@ -108,18 +142,23 @@ git pull
 ## 常见问题
 
 ### Q：同步冲突了怎么办？
+
 如果两台设备都修改了同一篇笔记，Git 可能会报冲突。解决方式：
+
 1. 用 VS Code 或 GitHub Desktop 打开冲突文件
 2. 选择保留哪个版本
 3. 提交解决后的版本
 
 ### Q：笔记包含敏感信息怎么办？
+
 - **私人仓库** —— GitHub 的私人仓库是加密的
 - **自托管** —— 也可以用 GitLab 或自己搭建 Gitea 服务
 - **加密** —— 某些敏感笔记可以用 Obsidian 加密插件
 
 ### Q：同步不成功？
+
 常见原因：
+
 - 忘记 `push` —— 只 commit 了但没有推送到 GitHub
 - 忘记 `pull` —— 另一台设备有更新但没有拉取
 - 网络问题 —— GitHub 在国内可能访问不稳定，可以配置代理或使用 Gitee
@@ -143,5 +182,5 @@ git pull
 
 ---
 
-**上一节：** [必备插件推荐](9.1必备插件推荐.md)
-**下一节：** [如何在 Obsidian 中使用 AI](10.如何在Obsidian中使用AI.md)
+**上一节：**必备插件推荐  
+**下一节：**如何在 Obsidian 中使用 AI
