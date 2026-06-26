@@ -13,7 +13,7 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     locale: "zh-CN",
-    baseUrl: "duluodexiaopiqiu.github.io/obsidian-km",
+    baseUrl: "/obsidian-km",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
