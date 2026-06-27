@@ -39,6 +39,13 @@ title: 知识管理结合 Obsidian 实战
 
 完整大纲见 [[00-大纲]]。
 
+## 👨‍💻 关于作者
+
+- [关于作者](关于作者)
+- [个人网站](https://xingxing.aigongxue.cfd/)
+- [公众号：AI共学社ALL](https://xingxing.aigongxue.cfd/)
+- [B站视频](https://www.bilibili.com/video/BV1997q6kEGJ)
+
 ## 📚 项目文档
 
 - [使用文档（如何新增内容并发布）](../docs/使用文档)
