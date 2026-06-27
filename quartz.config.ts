@@ -13,7 +13,7 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     locale: "zh-CN",
-    baseUrl: "xingxing.aigongxue.cfd",
+    baseUrl: "obsidian.aigongxue.cfd",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
